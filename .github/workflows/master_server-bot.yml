@@ -57,3 +57,4 @@ jobs:
       - script: |
           npm install
           npm start
+        displayName: "npm start"
