@@ -7,7 +7,7 @@ const regex = new RegExp(/pregunta (.+)/i);
 
 bot.start((ctx) =>
   ctx.reply(
-    "Bienvenido, usa el comando /pregunta <pregunta> para cualquiera de tus inquietudes"
+    "Bienvenido, usa el comando /pregunta <pregunta> para cualquiera de tus inquietudes. Ejemplo 1: /pregunta ¿cuáles son mis derechos?, Ejemplo 2: /pregunta ¿Qué es el servicio social?, Ejemplo 3: /pregunta Prácticas profesionales"
   )
 );
 bot.help((ctx) => ctx.reply("Send me a sticker"));
