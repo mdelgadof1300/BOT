@@ -10,6 +10,7 @@ bot.start((ctx) =>
     "Bienvenido, usa el comando /pregunta <pregunta> para cualquiera de tus inquietudes. Ejemplo 1: /pregunta ¿cuáles son mis derechos?, Ejemplo 2: /pregunta ¿Qué es el servicio social?, Ejemplo 3: /pregunta Prácticas profesionales"
   )
 );
+
 bot.help((ctx) => ctx.reply("Send me a sticker"));
 bot.on("sticker", (ctx) => ctx.reply("👍"));
 bot.hears("hi", (ctx) => ctx.reply("Hey there"));
@@ -20,7 +21,7 @@ bot.hears(regex, async (ctx) => {
   if (data["answers"][0].score > 60) {
     ctx.reply(respuesta);
   } else {
-    ctx.reply("No tengo una respuesta certera, lo siento :c");
+    ctx.reply("No tengo una respuesta certera, lo siento :c.");
   }
 });
 bot.launch();
